@@ -1,0 +1,62 @@
+# Site Info
+title: "Youngkeun Lee's Blog"
+tagline: "Youngkeun Lee's Blog"
+description: "Youngkeun Lee의 블로그에 오신 것을 환영합니다."
+baseurl: ""
+url: https://yklee1308.github.io
+logo: '/public/bear_face.png'
+
+# Site configurations
+gems:
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Youngkeun Lee
+  description: 이영근(Youngkeun Lee)
+  contact:
+    # linkedin:  https://www.linkedin.com/in/myname
+    github:    https://github.com/yklee1308
+    facebook:  https://www.facebook.com/yklee1308
+    # twitter:   https://twitter.com/myname
+    email:   yklee1308@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/blog/'
+  Categories:
+    - '/'
+    # - { Categories All: '/blog/categories/' } #sample
+    - { Baekjoon: '/blog/categories/#Baekjoon' }
+  About:
+    - '/about/'
+  Search:
+    - '/search/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+
+# Puglins
+mathjax: true # whether support mathjax
+#google_analytics_token: 'token_number' # leave blank if you don't want google analytics
+disqus_short_name: 'yklee1308-github-io' # leave blank if you don't want disqus
+
+
+# Use the following plug-ins
+gems:
+  - jekyll-paginate
