@@ -140,7 +140,7 @@ print(sum)
 문제 분석 및 풀이
 - 빠른 입력을 받아 앞의 [10950]번 문제를 풀 수 있는지를 묻는 문제이다.
 - 빠르게 입력을 받기 위해 input 함수 대신에 `sys.stdin.readline()`을 사용한다.
-- sys.stdin.readline'을 사용하기 위해 sys 모듈을 불러온다.
+- sys.stdin.readline을 사용하기 위해 sys 모듈을 불러온다.
 
 정답
 ```python
