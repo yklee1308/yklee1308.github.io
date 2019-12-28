@@ -36,6 +36,7 @@ comments: true
 
 정답
 ```python
+n = int(input())
 for i in range(1, 10):
     print('%d * %d = %d' % (n, i, n * i))
 ```
@@ -99,14 +100,13 @@ for i in range(t):
 
 문제 분석 및 풀이
 - 변수를 선언하고 for문을 사용하여 계속해서 변수에 수를 더해 나갈 수 있는지를 묻는 문제이다.
-- range(개수)를 사용하면 숫자가 0부터 시작하는 것에 주의해야 한다.
 
 정답
 ```python
 n = int(input())
 sum = 0
-for i in range(n):
-    sum += i + 1
+for i in range(1, n + 1):
+    sum += i
 print(sum)
 ```
 
@@ -179,8 +179,8 @@ for i in range(t):
 정답
 ```python
 n = int(input())
-for i in range(n):
-    print(i + 1)
+for i in range(1, n + 1):
+    print(i)
 ```
 
 ---
@@ -210,8 +210,8 @@ for i in range(n):
 정답
 ```python
 n = int(input())
-for i in range(n):
-    print(n - i)
+for i in range(1, n + 1):
+    print(n - i + 1)
 ```
 
 ---
@@ -243,13 +243,14 @@ Case #5: 7
 
 문제 분석 및 풀이
 - 앞의 [10950]번 문제에서 문자열과 포맷코드를 추가하여 출력할 수 있는지를 묻는 문제이다.
+- for문 안에서 인덱스를 사용하므로 range(첫 수, (끝 수 + 1)) 형태를 사용하는 것이 더 좋다고 생각한다.
 
 정답
 ```python
 t = int(input())
-for i in range(t):
+for i in range(1, t + 1):
     a, b = map(int, input().split())
-    print('Case #%d: %d' % (i + 1, a + b))
+    print('Case #%d: %d' % (i, a + b))
 ```
 
 ---
@@ -281,13 +282,14 @@ Case #5: 5 + 2 = 7
 
 문제 분석 및 풀이
 - 앞의 [10950]번 문제에서 문자열과 포맷코드를 추가하여 출력할 수 있는지를 묻는 문제이다.
+- 앞의 [11021]번 문제와 같은 방법으로 풀면 된다.
 
 정답
 ```python
 t = int(input())
-for i in range(t):
+for i in range(1, t + 1):
     a, b = map(int, input().split())
-    print('Case #%d: %d + %d = %d' % (i + 1, a, b, a + b))
+    print('Case #%d: %d + %d = %d' % (i, a, b, a + b))
 ```
 
 ---
@@ -319,8 +321,8 @@ for i in range(t):
 정답
 ```python
 n = int(input())
-for i in range(n):
-    print('*' * (i + 1))
+for i in range(1, n + 1):
+    print('*' * i)
 ```
 
 ---
@@ -355,16 +357,16 @@ for i in range(n):
 정답
 ```python
 n = int(input())
-for i in range(n):
-    print(' ' * (n - i - 1), '*' * (i + 1), sep='')
+for i in range(1, n + 1):
+    print(' ' * (n - i), '*' * i, sep='')
 ```
 
 추가
 - 다음과 같이 rjust 함수를 사용하는 방법도 있다.
 ```python
 n = int(input())
-for i in range(n):
-    print(('*' * (i + 1)).rjust(5))
+for i in range(1, n + 1):
+    print(('*' * i).rjust(5))
 ```
 
 ---
