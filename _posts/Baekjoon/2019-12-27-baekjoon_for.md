@@ -115,7 +115,7 @@ print(sum)
 ## [15552] 빠른 A+B
 
 문제 설명
-- 테스트의 개수를 빠른 입력으로 받는다.
+- 테스트의 개수를 입력 받는다.
 - 두 수를 빠른 입력으로 받고 (입력 수1 + 입력 수2)를 출력하는 것을 테스트의 개수만큼 반복한다.
 
 입력
@@ -146,7 +146,7 @@ print(sum)
 ```python
 import sys
 
-t = int(sys.stdin.readline())
+t = int(input())
 for i in range(t):
     a, b = map(int, sys.stdin.readline().split())
     print('%d' % (a + b))
