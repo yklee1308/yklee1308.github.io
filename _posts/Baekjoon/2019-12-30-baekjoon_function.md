@@ -83,7 +83,7 @@ def solve(a):
 - sort 함수를 사용하여 self_num을 오름차순으로 정렬한다.
 
 정답
-```
+```python
 num = [i for i in range(1, 10001)]
 other_num = []
 for i in num:
