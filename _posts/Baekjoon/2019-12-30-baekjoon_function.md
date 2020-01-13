@@ -75,22 +75,22 @@ def solve(a):
 문제 분석 및 풀이
 - 여러 종류의 자료형과 함수들을 사용하여 문제에서 원하는 알고리즘을 구현할 수 있는지를 묻는 문제이다.
 - `[i for i in range(첫 수, (끝 수 - 1)]`을 사용하여 1부터 끝 수까지의 숫자를 데이터로 갖는 리스트를 생성한다.
-- 위의 방법으로 1 ~ 10,000의 숫자를 데이터로 갖는 리스트 num을 생성한다.
-- 셀프 넘버가 아닌 수들을 담을 빈 리스트 other_num을 생성한다.
-- 1 ~ 10,000의 수들에 대한 함숫값들을 append 함수를 사용하여 other_num에 추가한다.
-- `set(객체)` 함수를 사용하여 리스트 자료형을 집합 자료형으로 전환하여 other_num의 중복되는 요소들을 제거한다.
-- num에서 other_num을 뺀 차집합으로 셀프 넘버들의 집합 self_num을 생성한다. (리스트로의 변환 필요)
-- sort 함수를 사용하여 self_num을 오름차순으로 정렬한다.
+- 위의 방법으로 1 ~ 10,000의 숫자를 데이터로 갖는 리스트 arr를 생성한다.
+- 셀프 넘버가 아닌 수들을 담을 빈 리스트 other를 생성한다.
+- 1 ~ 10,000의 수들에 대한 함숫값들을 append 함수를 사용하여 other에 추가한다.
+- `set(객체)` 함수를 사용하여 리스트 자료형을 집합 자료형으로 전환하여 other의 중복되는 요소들을 제거한다.
+- arr에서 other를 뺀 차집합으로 셀프 넘버들의 집합 self를 생성한다. (리스트로의 변환 필요)
+- sort 함수를 사용하여 self를 오름차순으로 정렬한다.
 
 정답
 ```python
-num = [i for i in range(1, 10001)]
-other_num = []
-for i in num:
-    other_num.append(i + (i // 1000) + ((i % 1000) // 100) + ((i % 100) // 10) + (i % 10))
-self_num = list(set(num) - set(other_num))
-self_num.sort()
-for i in self_num:
+arr = [i for i in range(1, 10001)]
+other = []
+for i in arr:
+    other.append(i + (i // 1000) + ((i % 1000) // 100) + ((i % 100) // 10) + (i % 10))
+self = list(set(arr) - set(other))
+self.sort()
+for i in self:
     print(i)
 ```
 
