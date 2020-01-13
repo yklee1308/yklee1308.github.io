@@ -80,7 +80,7 @@ print(arr.index(max(arr)) + 1)
 
 문제 설명
 - 다장조는 c, d, e, f, g, a, b, C로 이루어져 있으며, 차례대로 1부터 8까지의 숫자로 바꾸어 표현한다.
-- 1부터 8까지 차례대로 연주하면 ascending, 8부터 1까지 차례대로 연주하면 descending, 둘 다 아니라면 mixed를 출력한다.
+- 1부터 8까지 차례대로 연주하면 ascending, 8부터 1까지 차례대로 연주하면 descending, 둘 다 아니면 mixed를 출력한다.
 
 입력
 ```
