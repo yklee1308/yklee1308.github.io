@@ -283,11 +283,11 @@ else:
 입력
 ```
 The Curious Case of Benjamin Button
-0
-.
-0000000000000000000000000007000000000000000000000000
-
-.```
+```
+```
+ Mazatneunde Wae Teullyeoyo
+```
+```
 Teullinika Teullyeotzi
 ```
 
