@@ -53,6 +53,7 @@ print(fibonacci(n))
 추가
 - 재귀함수(Recursive function)를 사용하여 피보나치 함수를 구현하는 방법도 있다.
 - 이 방법은 연산량이 매우 많아지기 때문에 시간 초과 에러를 발생시킨다.
+
 ```python
 n = int(input())
 
