@@ -214,6 +214,7 @@ print(b)
 
 추가
 - 다음과 같이 sort 함수를 사용하면 더 편리하다.
+
 ```python
 a, b, c = map(int, input().split())
 asc = [a, b, c]
