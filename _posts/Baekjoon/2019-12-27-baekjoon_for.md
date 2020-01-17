@@ -363,6 +363,7 @@ for i in range(1, n + 1):
 
 추가
 - 다음과 같이 rjust 함수를 사용하는 방법도 있다.
+
 ```python
 n = int(input())
 for i in range(1, n + 1):
