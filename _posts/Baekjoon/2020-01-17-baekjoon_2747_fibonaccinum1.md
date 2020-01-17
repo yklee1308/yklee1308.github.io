@@ -1,6 +1,6 @@
 ---
 layout: post
-title: &lsqb;2747&rsqb; 피보나치 수
+title: 2747번 - 피보나치 수
 category: Baekjoon
 tags: [Baekjoon]
 comments: true
